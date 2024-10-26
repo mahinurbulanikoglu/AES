@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center_horizontal">
+
+    <Spinner
+        android:id="@+id/securityLevelSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:entries="@array/security_levels" />
+
+
+    <Button
+        android:id="@+id/btnSelectImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Görüntü Seç"
+        android:onClick="selectImage"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnSelectAudio"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ses Dosyası Seç"
+        android:onClick="selectAudio"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnScanQR"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QR ile Anahtar Üret"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnEncrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Görüntü ve Ses Şifrele"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/encryptedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifrelenmiş Veri"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <Button
+        android:id="@+id/btnDecrypt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Şifreyi Çöz"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/decryptedTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Çözülmüş Veri"
+        android:layout_marginTop="16dp"
+        android:textSize="16sp"
+        android:textColor="#000" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/ic_launcher_foreground" />
+
+</LinearLayout>

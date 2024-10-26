@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">AES Şifreleme Uygulaması</string>
+    <string-array name="security_levels">
+        <item>128-bit</item>
+        <item>192-bit</item>
+        <item>256-bit</item>
+    </string-array>
+</resources>
+
+
